@@ -1,0 +1,113 @@
+// 定义分为UI多少份
+@mun: 20;
+
+// 定义一份UI图多少
+@size: 1920px/20;
+
+html,body {
+    width: 100%;
+}
+// 版心
+.w{
+    width: 1226rem/@size;
+    margin: 0 auto;
+}
+// 页头开始
+.head{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+    .left_head{
+        float: left;
+        text-align: center;
+        line-height:40px;
+        a{
+            color: #b0b0b0;
+            &:hover{
+                color: white;
+            }
+        }
+        span{
+            color: #423c37;
+            padding-left: 3px;
+            padding-right: 3px;
+        }
+
+    }
+    .right_head{
+        float: right;
+        text-align: center;
+        line-height:40px;
+        a{
+            color: #b0b0b0;
+            &:hover{
+                color: white;
+            }
+        }
+        span{      
+            color: #423c37;
+            padding: 0 3px;
+ 
+        }
+        a:last-child{
+            background-color: #424242;
+            padding: 12px 20px;
+            em{
+                font-style: normal;
+               
+            }
+            &:hover{
+                background-color: white;
+                color: orange;
+            }
+        }
+    }
+
+}
+// 页头结束
+// 顶部导航广告搜索开始
+.top_nav{
+    height: 100px;
+    background-color: pink;
+    position: relative;
+    .topnav_block{
+        width: 100%;
+        height: 100%;
+    
+        .logo_ani{
+            width: 55rem/@size;
+            height: 55rem/@size;
+            overflow: hidden;
+            position: relative;
+            transform: translateY(20px);
+            a{
+                display: block;
+                width: 55rem/@size;
+                height: 55rem/@size;
+                position: absolute;
+                text-align: left;
+                text-indent: -9999999rem;
+            }
+            .logo_mi{
+                background: url(../img/logo1.png) no-repeat 3px;
+                background-color: #ff6700;
+            }
+            .logo_home{
+                background: url(../img/logo2.png) no-repeat -2px;
+                background-color: #ff6700;
+                top: 0;
+                left: -100%;
+            }
+        }  
+
+    }
+    .topnav_none{
+        position: absolute;
+        width: 100%;
+        height: 229rem@size;
+        background-color: #333333;
+        // display: none;
+    }
+}
+
+// 顶部导航广告搜索结束
